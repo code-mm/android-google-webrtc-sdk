@@ -1,4 +1,6 @@
-rootProject.name='google-webrtc'
+include ':ms-webrtc-app'
+include ':webrtc-app'
+rootProject.name='android-google-webrtc'
 include ':app'
 include ':im'
 include ':sdk'

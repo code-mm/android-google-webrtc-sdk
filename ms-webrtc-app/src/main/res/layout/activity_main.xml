@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextUserId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="用户ID" />
+
+
+    <EditText
+        android:id="@+id/editTextBuddyId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="呼叫ID" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接" />
+
+
+    <Button
+        android:id="@+id/buttonInit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="初始化" />
+
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="呼叫" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/LocalSurfaceView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1" />
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/RemoteSurfaceView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -211,6 +211,8 @@ public class SocketManager implements IEvent {
 
     }
 
+
+    // 响铃
     @Override
     public void onRing(String fromId) {
         handler.post(() -> {
